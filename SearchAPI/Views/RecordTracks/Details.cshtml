@@ -1,0 +1,60 @@
+﻿@model SearchAPI.Models.RecordTrack
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RecordTrack</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TrackID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TrackID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TrackName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TrackName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ArtistName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ArtistName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.URL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClickCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClickCount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

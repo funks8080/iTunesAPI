@@ -1,0 +1,35 @@
+﻿@model IEnumerable<SearchAPI.Models.RecordTrack>
+
+@{
+    ViewData["Title"] = "Click Counts";
+}
+
+<h2>Click Counts</h2>
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TrackID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ClickCount)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrackID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClickCount)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
